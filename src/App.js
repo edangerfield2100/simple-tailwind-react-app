@@ -50,20 +50,25 @@ function App() {
         </div>
       </header>
       <div className="grid md:grid-cols-4">
-        {/* Always show Navbar for md+ resolutions */}
+        <nav
+          className={`${
+            !showMenuForMobile && "hidden"
+          } md:block md:col-span-1 pl-8 mb-4`}
+        >
+          <Navbar></Navbar>
+        </nav>
+        {/* Alternative approach - requires two element blocks */}
+        {/* Always show Navbar for md+ resolutions
         <nav className="hidden md:block md:col-span-1 pl-8 mb-4">
           <Navbar></Navbar>
         </nav>
         {/* Conditionally show Navbar below md resolution */}
+        {/*
         {showMenuForMobile && (
           <nav className="pl-8 mb-4">
             <Navbar></Navbar>
           </nav>
-        )}
-        {/* alternative implementation 
-        <nav className={`pl-8 mb-4 ${!showMenu ? "hidden" : ""}`}>
-          <Navbar></Navbar>
-        </nav> */}
+        )} */}
         <main className="md:col-span-3 p-8 bg-gray-100">
           <div>
             {/* Example using Tailwind and inline styles */}
