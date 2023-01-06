@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryRed: "#4A1483",
+        primaryPurple: "#4A1483",
       },
       fontSize: {
         mammoth: "8rem",

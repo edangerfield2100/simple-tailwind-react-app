@@ -16,12 +16,15 @@ function App() {
     <div>
       <header className="p-8">
         <div className="flex justify-between items-center">
-          <h1 className="text-primaryRed text-lg font-bold uppercase md:text-xl">
+          <h1 className="text-primaryPurple text-lg font-bold uppercase md:text-xl">
             Test Tailwind
           </h1>
           <div className="flex items-center pl-10">
             <div className="inline-block pr-2">
-              <a href="#" className="btn border-2 border-primaryRed">
+              <a
+                href="#"
+                className="btn border-2 border-primaryPurple hover:bg-primaryPurple hover:text-white transition ease-out duration-500"
+              >
                 Login
               </a>
             </div>
@@ -76,7 +79,7 @@ function App() {
             </div>
           </div>
           <div>
-            <h2 className="mb-4 text-primaryRed">
+            <h2 className="mb-4 text-primaryPurple">
               Section 2 (multiple responsive cards using Flebox)
             </h2>
             <div className="flex">
@@ -97,7 +100,7 @@ function App() {
             </div>
           </div>
           <div>
-            <h2 className="mb-4 text-primaryRed">
+            <h2 className="mb-4 text-primaryPurple">
               Section 3 (multiple responsive cards using CSS grid)
             </h2>
             <div className="grid md:grid-cols-3 md:gap-10">
